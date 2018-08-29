@@ -11,27 +11,82 @@
             color: darkblue;
             line-height: 150%;
         }
-
     </style>
 
 </head>
 
 <body>
-    <h3>En</h3>
-    <p>Gochujang blue bottle iPhone quinoa, umami lumbersexual semiotics disrupt coloring book squid. Tilde banjo flannel PBR&B umami vape plaid occupy prism lumbersexual man braid. </p>
-    <h3>Lille</h3>
-    <p>Fam before they sold out edison bulb, la croix sartorial cray poke yuccie copper mug ugh. Kickstarter yr tumblr synth.</p>
-    <h3>Bitte</h3>
-    <p>Selvage authentic heirloom put a bird on it umami sustainable bitters meh bicycle rights kombucha af squid. DIY air plant drinking vinegar XOXO raw denim ethical semiotics. </p>
-    <h3>Smule</h3>
-    <p>Roof party tumeric next level etsy church-key plaid. Fashion axe deep v tumeric kickstarter tofu narwhal direct trade. Hexagon gentrify pitchfork ethical echo park. </p>
-    <h3>Tekst</h3>
-    <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+
+    <div class=".typo" id="typo1">
+        <h3>En</h3>
+
+        <p>Gochujang blue bottle iPhone quinoa, umami lumbersexual semiotics disrupt coloring book squid. Tilde banjo flannel PBR&B umami vape plaid occupy prism lumbersexual man braid. </p>
+    </div>
+
+    <div class=".typo" id="typo2">
+        <h3>Lille</h3>
+
+        <p>Fam before they sold out edison bulb, la croix sartorial cray poke yuccie copper mug ugh. Kickstarter yr tumblr synth.</p>
+    </div>
+
+    <div class=".typo" id="typo3">
+        <h3>Bitte</h3>
+
+        <p>Selvage authentic heirloom put a bird on it umami sustainable bitters meh bicycle rights kombucha af squid. DIY air plant drinking vinegar XOXO raw denim ethical semiotics. </p>
+    </div>
+
+
+    <div class=".typo" id="typo4">
+        <h3>Smule</h3>
+
+        <p>Roof party tumeric next level etsy church-key plaid. Fashion axe deep v tumeric kickstarter tofu narwhal direct trade. Hexagon gentrify pitchfork ethical echo park. </p>
+    </div>
+
+    <div class=".typo" id="typo5">
+        <h3>Tekst</h3>
+
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
 
 
     <script>
+        const typo1 = document.querySelector("#typo1");
+        const typo2 = document.querySelector("#typo2");
+        const typo3 = document.querySelector("#typo3");
+        const typo4 = document.querySelector("#typo4");
+        const typo5 = document.querySelector("#typo5");
 
 
+        typo1.addEventListener("click", doSomething);
+
+        function doSomething() {
+            typo1.style.backgroundColor = "pink";
+        }
+
+        typo2.addEventListener("click", addSomething);
+
+        function addSomething() {
+            typo2.style.backgroundColor = "blue";
+        }
+
+        typo3.addEventListener("click", woSomething);
+
+        function woSomething() {
+            typo3.style.backgroundColor = "orange";
+        }
+
+        typo4.addEventListener("click", mixSomething);
+
+        function mixSomething() {
+            typo4.style.backgroundColor = "yellow";
+        }
+
+        typo5.addEventListener("click", weSomething);
+
+        function weSomething() {
+            typo5.style.backgroundColor = "green";
+        }
     </script>
 
 
