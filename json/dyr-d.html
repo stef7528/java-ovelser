@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="dyr">
+
+        <strong class="navn"></strong>
+        <span>: er et</span>
+        <span class="type"></span>
+        <span>som bor i en</span>
+        <span class="levested"></span>
+        <img class="billede" src="" alt="">
+
+    </div>
+
+
+    <script>
+        let dyr = {
+            "navn": "Hest",
+            "type": "pattedyr",
+            "levested": "boks",
+            "billede": "hest.jpg"
+
+        };
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector(".navn").textContent = dyr.navn;
+            document.querySelector(".type").textContent = dyr.type;
+            document.querySelector(".levested").textContent = dyr.levested;
+            document.querySelector(".billede").src = dyr.billede;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
